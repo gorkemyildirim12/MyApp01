@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home_black_18dp"
+        android:title="Patient Lists"/>
+
+    <item
+        android:id="@+id/navigation_albums"
+        android:icon="@drawable/baseline_favorite_black_18dp"
+        android:title="Left Foot"/>
+
+    <item
+        android:id="@+id/navigation_artists"
+        android:icon="@drawable/baseline_delete_black_18dp"
+        android:title="Right Foot"/>
+
+</menu>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/row_layout_background">
+
+    <TextView
+        android:id="@+id/patientIdView"
+        android:layout_width="15dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/nunito"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/patientGenderView"
+        app:layout_constraintEnd_toStartOf="@+id/patientNameView"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/patientNameView"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunitoblack"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/patientSurnameView"
+        app:layout_constraintStart_toEndOf="@+id/patientIdView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/patientSurnameView"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/nunitoblack"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/patientNameView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/patientGenderView"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/nunito"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/emailView"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/patientIdView" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/nunito"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/patientGenderView"
+        app:layout_constraintTop_toBottomOf="@+id/patientNameView" />
+
+    <TextView
+        android:id="@+id/patientAgeView"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:fontFamily="@font/nunito"
+        android:text="Age: "
+        app:layout_constraintEnd_toStartOf="@+id/patientHeightView"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/patientGenderView" />
+
+    <TextView
+        android:id="@+id/patientHeightView"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:fontFamily="@font/nunito"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/patientWeightView"
+        app:layout_constraintStart_toEndOf="@+id/patientAgeView"
+        app:layout_constraintTop_toBottomOf="@+id/emailView" />
+
+    <TextView
+        android:id="@+id/patientWeightView"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nunito"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/shoeNumberView"
+        app:layout_constraintStart_toEndOf="@+id/patientHeightView"
+        app:layout_constraintTop_toBottomOf="@+id/emailView" />
+
+    <TextView
+        android:id="@+id/shoeNumberView"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nunito"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/patientWeightView"
+        app:layout_constraintTop_toBottomOf="@+id/emailView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="130dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profileicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="11dp"
+        android:text="Age:"
+        app:layout_constraintEnd_toStartOf="@+id/patientAgeView"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/patientGenderView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="24sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="49dp"
+        android:text="Height:"
+        app:layout_constraintEnd_toStartOf="@+id/patientHeightView"
+        app:layout_constraintStart_toEndOf="@+id/patientAgeView"
+        app:layout_constraintTop_toBottomOf="@+id/patientNameView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Weight:"
+        app:layout_constraintEnd_toStartOf="@+id/patientWeightView"
+        app:layout_constraintStart_toEndOf="@+id/patientHeightView"
+        app:layout_constraintTop_toBottomOf="@+id/emailView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="12dp"
+        android:text="Shoe:"
+        app:layout_constraintEnd_toStartOf="@+id/shoeNumberView"
+        app:layout_constraintStart_toEndOf="@+id/patientWeightView"
+        app:layout_constraintTop_toBottomOf="@+id/emailView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
